@@ -18,7 +18,7 @@
                BlueprintIdentifier = "A49EED302D4CFC44001B4C1F"
                BuildableName = "Emoji Memory Game.app"
                BlueprintName = "Emoji Memory Game"
-               ReferencedContainer = "container:Emoji Memory Game.xcodeproj">
+               ReferencedContainer = "container:EmojiMemoryGame.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -40,16 +40,6 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "A49EED302D4CFC44001B4C1F"
-            BuildableName = "Emoji Memory Game.app"
-            BlueprintName = "Emoji Memory Game"
-            ReferencedContainer = "container:Emoji Memory Game.xcodeproj">
-         </BuildableReference>
-      </BuildableProductRunnable>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"
@@ -57,16 +47,6 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "A49EED302D4CFC44001B4C1F"
-            BuildableName = "Emoji Memory Game.app"
-            BlueprintName = "Emoji Memory Game"
-            ReferencedContainer = "container:Emoji Memory Game.xcodeproj">
-         </BuildableReference>
-      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
