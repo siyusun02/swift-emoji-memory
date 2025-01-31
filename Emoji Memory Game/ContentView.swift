@@ -10,6 +10,8 @@ import SwiftUI
 struct ContentView: View {
     @EnvironmentObject var game: Game
 
+    @State private var didError = true
+
     private let cols = Array(repeating: GridItem(.flexible()), count: 4)
 
     func formattedTime(_ seconds: Int) -> String {
@@ -21,7 +23,9 @@ struct ContentView: View {
             Text("Emoji Memory ").font(.largeTitle)
 
             HStack {
-                // TODO Label("Time: \(formattedTime(game.timeElapsed))", systemImage: "clock")
+                Label(
+                    "Time: \(formattedTime(game.timeElapsed))",
+                    systemImage: "clock")
                 Label(
                     "Turns: \(game.tries)",
                     systemImage: "rectangle.on.rectangle")
@@ -37,6 +41,27 @@ struct ContentView: View {
             }.padding(.horizontal)
 
             Spacer()
+        }.alert(
+            "You did it! 🥳🎉",
+            isPresented: $game.won,
+            presenting: game
+        ) { game in
+            Button("Try Again", role: .cancel) {
+                game.restart()
+            }
+        } message: { game in
+            Text(
+                """
+                ---------------
+                🎯 Final Score: \(game.calculateScore())
+                ---------------
+                Is based on your final stats.
+                ⏳ Time: \(formattedTime( game.timeElapsed))
+                🔄 Turns: \(game.tries)
+                
+                Can you beat your highscore? 🤔
+                """
+            )
         }
     }
 }

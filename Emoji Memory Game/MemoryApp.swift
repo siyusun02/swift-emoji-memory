@@ -2,7 +2,7 @@ import SwiftUI
 
 @main
 struct MemoryApp: App {
-    @StateObject private var game: Game = Game.createRandomGame()
+    @StateObject private var game: Game = Game()
     
     var body: some Scene {
         WindowGroup {
@@ -14,6 +14,6 @@ struct MemoryApp: App {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
-            .environmentObject(Game.createRandomGame())
+            .environmentObject(Game())
     }
 }
