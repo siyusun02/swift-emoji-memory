@@ -14,7 +14,11 @@ A simple memory game built with **SwiftUI** with the intention of learning Swift
 - [ ] Local highscore
 
 ## Screenshots
-![TBD](#) 
+![Screenshot 1](https://github.com/siyusun02/swift-emoji-memory/blob/main/Screenshots/ss1.png?raw=true) 
+
+![Screenshot 2](https://github.com/siyusun02/swift-emoji-memory/blob/main/Screenshots/ss2.png?raw=true) 
+
+![Screenshot 3](https://github.com/siyusun02/swift-emoji-memory/blob/main/Screenshots/ss3.png?raw=true) 
 
 ## Requirements
 
